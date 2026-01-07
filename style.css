@@ -5,21 +5,21 @@
 
 /* CSS Variables */
 :root {
-    /* Colors */
-    --primary: #00ff88;
-    --secondary: #00aaff;
-    --accent: #ff00aa;
-    --background: #0a0a0f;
-    --surface: #12121a;
-    --surface-hover: #1a1a25;
+    /* Colors - SH1W4 DEEP TECH THEME */
+    --primary: #00ff41;        /* Matrix Green */
+    --secondary: #bd93f9;      /* Dracula Purple */
+    --accent: #ff79c6;         /* Cyber Pink */
+    --background: #0d1117;     /* GitHub Dark */
+    --surface: #161b22;        /* GitHub Surface */
+    --surface-hover: #21262d;
     --text-primary: #ffffff;
-    --text-secondary: #a0a0aa;
-    --text-dim: #606070;
+    --text-secondary: #8b949e;
+    --text-dim: #484f58;
     
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
     --gradient-accent: linear-gradient(135deg, var(--accent) 0%, var(--secondary) 100%);
-    --gradient-dark: linear-gradient(180deg, #12121a 0%, #0a0a0f 100%);
+    --gradient-dark: linear-gradient(180deg, #161b22 0%, #0d1117 100%);
     
     /* Spacing */
     --space-xs: 0.5rem;
@@ -34,10 +34,10 @@
     
     /* Effects */
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
-    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.2);
-    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.3);
-    --shadow-glow: 0 0 40px rgba(0, 255, 136, 0.3);
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.6);
+    --shadow-glow: 0 0 20px rgba(0, 255, 65, 0.15);
 }
 
 /* Reset & Base */
@@ -131,23 +131,16 @@ body {
     margin-bottom: var(--space-lg);
 }
 
-.hex-logo {
-    width: 120px;
-    height: 120px;
-    background: var(--gradient-primary);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-    position: relative;
+.sh1w4-main-logo {
+    width: 140px;
+    height: auto;
+    filter: drop-shadow(0 0 10px rgba(0, 255, 65, 0.3));
     animation: float 6s ease-in-out infinite;
 }
 
-.logo-text {
-    font-family: var(--font-mono);
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--background);
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
 }
 
 .main-title {
