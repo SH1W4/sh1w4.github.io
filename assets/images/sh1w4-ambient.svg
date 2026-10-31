@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1100" fill="none">
+<defs>
+ <linearGradient id="h" x1="900" y1="180" x2="900" y2="920" gradientUnits="userSpaceOnUse"><stop stop-color="#0B251D"/><stop offset=".55" stop-color="#07110F"/><stop offset="1" stop-color="#080A0D" stop-opacity="0"/></linearGradient>
+ <radialGradient id="g" cx="0" cy="0" r="1" gradientTransform="matrix(0 520 -850 0 1190 460)" gradientUnits="userSpaceOnUse"><stop stop-color="#4EEA91" stop-opacity=".22"/><stop offset="1" stop-color="#4EEA91" stop-opacity="0"/></radialGradient>
+ <pattern id="p" width="54" height="54" patternUnits="userSpaceOnUse"><path d="M54 0H0V54" stroke="#77E9A8" stroke-opacity=".07"/></pattern>
+ <filter id="b"><feGaussianBlur stdDeviation="24"/></filter>
+</defs>
+<path fill="url(#h)" d="M0 0h1800v1100H0z"/><path fill="url(#g)" d="M0 0h1800v1100H0z"/><path fill="url(#p)" d="M0 0h1800v1100H0z"/>
+<ellipse cx="1190" cy="470" rx="470" ry="150" fill="#39D98A" opacity=".12" filter="url(#b)"/>
+<g stroke="#6AF2A7" stroke-opacity=".32">
+ <path d="M-80 760 140 700l150 35 190-115 155 48 180-138 160 80 180-190 180 100 180-128 210 74 210-150"/>
+ <path d="M-80 790 140 730l150 35 190-115 155 48 180-138 160 80 180-190 180 100 180-128 210 74 210-150" opacity=".5"/>
+ <path d="M-80 830 140 770l150 35 190-115 155 48 180-138 160 80 180-190 180 100 180-128 210 74 210-150" opacity=".35"/>
+ <path d="M-80 870 140 810l150 35 190-115 155 48 180-138 160 80 180-190 180 100 180-128 210 74 210-150" opacity=".22"/>
+</g>
+<g stroke="#75E7A8" stroke-opacity=".3"><circle cx="1190" cy="470" r="260"/><circle cx="1190" cy="470" r="350"/><circle cx="1190" cy="470" r="440"/></g>
+<g stroke="#A2F5C4" stroke-opacity=".55"><path d="M1190 24v60m-30-30h60M1500 230v44m-22-22h44M870 330v36m-18-18h36M1450 680v42m-21-21h42"/></g>
+<g fill="#8BF4B8" fill-opacity=".65"><circle cx="1190" cy="470" r="3"/><circle cx="870" cy="330" r="2"/><circle cx="1500" cy="230" r="2"/></g>
+<path d="M0 950c300-110 510-70 760-130s490-120 1040-30v310H0V950Z" fill="#080A0D" fill-opacity=".75"/>
+</svg>
