@@ -15,7 +15,7 @@
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:90px}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body{margin:0;-webkit-tap-highlight-color:rgba(191,75,43,.18);background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
 button{font:inherit}
 ::selection{background:var(--accent);color:#fff}
@@ -34,7 +34,7 @@ button{font:inherit}
 .kicker,.section-marker,.project-meta,.art-caption,.contact-kicker,.research-list article>span{font:500 .65rem var(--mono);letter-spacing:.045em}
 .kicker{display:flex;align-items:center;gap:12px;color:var(--muted);margin:0 0 34px}
 .kicker-line{width:36px;height:1px;background:var(--accent)}
-.hero h1{font:400 clamp(4.5rem,8.4vw,8.4rem)/.91 var(--serif);letter-spacing:-.075em;max-width:780px;margin:0}
+.hero h1{text-wrap:balance;font:400 clamp(4.5rem,8.4vw,8.4rem)/.91 var(--serif);letter-spacing:-.075em;max-width:780px;margin:0}
 .hero h1 em,.profile h2 em,.section-intro h2 em,.method h2 em,.research h2 em,.contact h2 em{font-weight:400;color:var(--accent)}
 .hero-description{font-size:1.12rem;line-height:1.6;color:var(--ink-soft);max-width:430px;margin:30px 0 0}
 .hero-bottom{display:flex;align-items:end;justify-content:space-between;width:100%;margin-top:auto;padding-top:48px}
@@ -54,7 +54,7 @@ button{font:inherit}
 .section-marker{display:flex;gap:18px;color:var(--muted);padding-top:9px;border-top:1px solid var(--rule);width:180px;flex-shrink:0}
 .section-marker span:first-child{color:var(--accent)}
 .profile,.work,.method,.research{display:grid;grid-template-columns:210px 1fr;gap:40px}
-.profile-copy h2,.section-intro h2,.method h2,.research h2{font:400 clamp(2.8rem,5vw,5.1rem)/1.03 var(--serif);letter-spacing:-.06em;margin:0;max-width:850px}
+.profile-copy h2,.section-intro h2,.method h2,.research h2{text-wrap:balance;font:400 clamp(2.8rem,5vw,5.1rem)/1.03 var(--serif);letter-spacing:-.06em;margin:0;max-width:850px}
 .profile-columns{display:grid;grid-template-columns:1fr 1fr;gap:36px;margin:42px 0 0;max-width:850px}
 .profile-columns p{font-size:.94rem;line-height:1.8;color:var(--ink-soft);margin:0;max-width:55ch}
 .trajectory{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:52px;padding:18px 0;border-block:1px solid var(--rule)}
@@ -109,7 +109,7 @@ button{font:inherit}
 .contact{background:var(--accent);color:#f4eee6;padding:82px 28px}
 .contact-inner{max-width:var(--page);margin:auto}
 .contact-kicker{font-size:.6rem;color:rgba(255,255,255,.7)}
-.contact h2{font:400 clamp(3rem,6.4vw,6.7rem)/.98 var(--serif);letter-spacing:-.065em;max-width:900px;margin:27px 0 52px}
+.contact h2{text-wrap:balance;font:400 clamp(3rem,6.4vw,6.7rem)/.98 var(--serif);letter-spacing:-.065em;max-width:900px;margin:27px 0 52px}
 .contact h2 em{color:#2b201c}
 .contact-bottom{display:flex;justify-content:space-between;align-items:end;gap:30px;border-top:1px solid rgba(255,255,255,.35);padding-top:19px}
 .contact-bottom p{font-size:.82rem;max-width:400px;margin:0;color:rgba(255,255,255,.82)}
