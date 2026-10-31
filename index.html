@@ -1,398 +1,110 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SH1W4 | Operational Core</title>
-    <meta name="description"
-        content="SH1W4 Operational Core - Architecting self-sustaining systems through agentic execution.">
-    <meta name="keywords" content="AI Architect, Systems Engineering, Agency, Symbeon Protocol, SH1W4">
-    <link rel="stylesheet" href="style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Inter:wght@300;400;600;700&display=swap"
-        rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080a0d">
+  <meta name="description" content="SH1W4 — Engenharia de sistemas, inteligência artificial aplicada e arquitetura de soluções. Projetos, pesquisa e provas de execução.">
+  <meta name="author" content="SH1W4">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SH1W4 — Systems Engineering & Applied AI">
+  <meta property="og:description" content="Transformando problemas complexos em sistemas verificáveis.">
+  <title>SH1W4 — Systems Engineering & Applied AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
-<body class="smooth-scroll">
-    <!-- Neural Network Background -->
-    <canvas id="neural-network"></canvas>
-
-    <!-- Progress Progress Bar -->
-    <div class="scroll-progress"></div>
-
-    <!-- System Status Bar -->
-    <div class="system-status">
-        <div class="status-item">
-            <span class="status-label">ENTITY</span>
-            <span class="status-value" id="system-status">SH1W4 [ACTIVE]</span>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <div class="ambient-grid" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="SH1W4 — início"><span>SH1W4</span><i> / INDEPENDENT SYSTEMS ENGINEERING</i></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Navegação principal">
+      <a href="#about">Perfil</a><a href="#focus">Atuação</a><a href="#work">Projetos</a><a href="#method">Método</a><a href="#contact" class="nav-cta">Contato ↗</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero section-shell" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse"></span> ENGENHARIA · IA APLICADA · SISTEMAS</p>
+        <h1>Construo sistemas para transformar <em>complexidade</em> em capacidade operacional.</h1>
+        <p class="hero-lede">Sou desenvolvedor e pesquisador independente em engenharia de software e inteligência artificial. Trabalho na interseção entre arquitetura de sistemas, dados, automação e agentes — com foco em rastreabilidade, integração e execução verificável.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explorar projetos <span>↗</span></a>
+          <a class="button button-quiet" href="https://github.com/SH1W4" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
         </div>
-        <div class="status-item">
-            <span class="status-label">UPLINK</span>
-            <span class="status-value" id="sync-status">STABLE</span>
+        <div class="hero-note"><span class="mono">CURRENT MODE</span><span>Pesquisa aplicada + desenvolvimento de sistemas</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Identidade visual SH1W4">
+        <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
+        <div class="visual-core"><img src="assets/images/sh1w4_logo.png" alt="Símbolo SH1W4"></div>
+        <span class="visual-label label-top">HUMAN INTENT</span><span class="visual-label label-right">SYSTEMS</span><span class="visual-label label-bottom">VERIFIABLE OUTCOME</span>
+      </div>
+      <div class="hero-index"><span>01 / 05</span><span>PORTFOLIO 2026</span></div>
+    </section>
+
+    <section class="intro-strip">
+      <p>Não coleciono apenas protótipos. Investigo problemas, desenho arquiteturas, implemento soluções e registro o que pode ser demonstrado.</p>
+    </section>
+
+    <section class="content-section section-shell" id="about">
+      <div class="section-heading"><p class="eyebrow">01 — PERFIL</p><h2>Engenharia com contexto.<br><em>Execução com evidência.</em></h2></div>
+      <div class="about-grid">
+        <div class="about-main">
+          <p class="lead">Minha trajetória combina desenvolvimento de software, análise de dados, experimentação em IA e construção de produtos digitais.</p>
+          <p>Ao longo de diferentes projetos, passei a investigar não apenas como implementar uma solução, mas como preservar decisões, integrar capacidades independentes, controlar limites de execução e transformar aprendizados em ativos reutilizáveis.</p>
+          <p>Hoje concentro meu trabalho em arquitetura de sistemas, inteligência artificial aplicada e infraestrutura de engenharia orientada por evidências.</p>
         </div>
-        <div class="status-item">
-            <span class="status-label">PROTOCOL</span>
-            <span class="status-value" id="evolution-status">SYMBEON_v3.0</span>
+        <aside class="principles">
+          <div><span>01</span><p>Clareza de problema antes da tecnologia.</p></div>
+          <div><span>02</span><p>Contratos explícitos e componentes desacoplados.</p></div>
+          <div><span>03</span><p>Rastreabilidade entre decisão, execução e resultado.</p></div>
+          <div><span>04</span><p>Autonomia técnica com limites e supervisão.</p></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="content-section section-shell" id="focus">
+      <div class="section-heading"><p class="eyebrow">02 — ATUAÇÃO</p><h2>Áreas em que<br><em>concentro pesquisa e desenvolvimento.</em></h2></div>
+      <div class="focus-grid">
+        <article class="focus-card"><span class="card-index">A / 01</span><div class="focus-icon">⌘</div><h3>Arquitetura de sistemas</h3><p>Modelagem de domínios, contratos, APIs, integração entre serviços e desenho de sistemas modulares.</p><div class="tags"><span>System Design</span><span>APIs</span><span>Data Architecture</span></div></article>
+        <article class="focus-card"><span class="card-index">A / 02</span><div class="focus-icon">◉</div><h3>IA aplicada e agentes</h3><p>Workflows com LLMs, agentes especializados, recuperação contextual, avaliação e governança de ferramentas.</p><div class="tags"><span>LLMs</span><span>RAG</span><span>Agent Systems</span></div></article>
+        <article class="focus-card"><span class="card-index">A / 03</span><div class="focus-icon">▤</div><h3>Dados e visão computacional</h3><p>Extração e interpretação documental, pipelines de dados, OCR, classificação e apoio à decisão.</p><div class="tags"><span>Python</span><span>OCR / Vision</span><span>Analytics</span></div></article>
+        <article class="focus-card"><span class="card-index">A / 04</span><div class="focus-icon">⟡</div><h3>Verificação e governança</h3><p>Rastreabilidade de evidências, validação independente, limites de confiança e separação de responsabilidades.</p><div class="tags"><span>Verification</span><span>Auditability</span><span>Governance</span></div></article>
+      </div>
+    </section>
+
+    <section class="content-section work-section" id="work">
+      <div class="section-shell">
+        <div class="section-heading"><p class="eyebrow">03 — TRABALHO SELECIONADO</p><h2>Problemas reais.<br><em>Abordagens documentadas.</em></h2><p class="section-description">Uma seleção de iniciativas e estudos. O estado de cada item é indicado para distinguir implementação, pesquisa e evolução em andamento.</p></div>
+        <div class="work-list">
+          <article class="work-item"><div class="work-meta"><span>01 / DOCUMENT INTELLIGENCE</span><span class="status status-research">EM DESENVOLVIMENTO</span></div><div class="work-body"><div><h3>3L0 Vision</h3><p>Ecossistema de visão computacional e inteligência documental para interpretar documentos operacionais, estruturar dados e apoiar fluxos empresariais.</p><div class="tags"><span>Computer Vision</span><span>OCR</span><span>ERP Workflows</span></div></div><a href="https://github.com/symbeon-labs" target="_blank" rel="noreferrer" aria-label="Ver organização Symbeon Labs">Explorar organização ↗</a></div></article>
+          <article class="work-item"><div class="work-meta"><span>02 / EVIDENCE INFRASTRUCTURE</span><span class="status status-research">PESQUISA + MVP</span></div><div class="work-body"><div><h3>LASTRO / PAC-IA</h3><p>Pesquisa em infraestrutura de evidências e verificação de capacidades. Explora interpretação, verificações independentes, consenso e estados limitados por evidência.</p><div class="tags"><span>Evidence Systems</span><span>Verification</span><span>Attestation</span></div></div><a href="https://lastro-learn.vercel.app" target="_blank" rel="noreferrer">Ver demonstração ↗</a></div></article>
+          <article class="work-item"><div class="work-meta"><span>03 / ORGANIZATIONAL INTELLIGENCE</span><span class="status status-active">FUNDAMENTO EM EVOLUÇÃO</span></div><div class="work-body"><div><h3>Symbeon Intelligence</h3><p>Fundação de conhecimento organizacional para inventário de ativos, decisões, evidências, governança e aprendizagem cumulativa entre projetos independentes.</p><div class="tags"><span>Knowledge Systems</span><span>IP Governance</span><span>Traceability</span></div></div><a href="https://github.com/symbeon-labs" target="_blank" rel="noreferrer">Ver organização ↗</a></div></article>
+          <article class="work-item"><div class="work-meta"><span>04 / CIVIC DATA</span><span class="status status-active">PROJETO PÚBLICO</span></div><div class="work-body"><div><h3>Pulso Cívico</h3><p>Observatório de dados eleitorais com foco em organização de pesquisas, fontes, metodologia e transparência informacional.</p><div class="tags"><span>Data Engineering</span><span>Public Data</span><span>Transparency</span></div></div><a href="https://github.com/SH1W4/pulso-civico" target="_blank" rel="noreferrer">Ver repositório ↗</a></div></article>
+          <article class="work-item"><div class="work-meta"><span>05 / INDUSTRIAL SYSTEMS</span><span class="status status-research">ARQUITETURA PROPRIETÁRIA</span></div><div class="work-body"><div><h3>ICIE</h3><p>Motor independente de custos e inventário industrial, concebido para integração com sistemas consumidores por contratos e escopos definidos.</p><div class="tags"><span>Domain Modeling</span><span>Cost Engine</span><span>Inventory</span></div></div><span class="private-note">Detalhes técnicos restritos</span></div></article>
         </div>
-    </div>
+        <p class="work-footnote">Projetos apresentados em nível institucional. Repositórios, código, dados de clientes e detalhes proprietários são compartilhados apenas quando públicos e autorizados.</p>
+      </div>
+    </section>
 
-    <!-- MAIN PARALLAX WRAPPER -->
-    <main class="parallax-wrapper">
-        
-        <!-- HERO SECTION: Multi-Layer Parallax -->
-        <header class="hero-parallax" id="top">
-            <div class="parallax-layer layer-bg" data-speed="0.2"></div>
-            <div class="parallax-layer layer-engine" data-speed="0.5"></div>
-            <div class="parallax-layer layer-glow" data-speed="0.8"></div>
-            
-            <div class="hero-content" data-reveal="up">
-                <div class="logo-container">
-                    <img src="assets/images/sh1w4_logo.png" alt="SH1W4 LOGO" class="sh1w4-main-logo">
-                </div>
-                <h1 class="main-title glitch" data-text="SH1W4">SH1W4</h1>
-                <h2 class="engine-title">Operational Core</h2>
-                <p class="tagline">Architecting self-sustaining systems through agentic execution.</p>
+    <section class="content-section section-shell" id="method">
+      <div class="section-heading"><p class="eyebrow">04 — MÉTODO DE TRABALHO</p><h2>Do problema ao<br><em>resultado verificável.</em></h2></div>
+      <div class="method-flow">
+        <div class="method-step"><span>01</span><h3>Entender</h3><p>Contexto, usuários, restrições e critérios de sucesso.</p></div>
+        <div class="method-step"><span>02</span><h3>Modelar</h3><p>Domínio, arquitetura, riscos e contratos.</p></div>
+        <div class="method-step"><span>03</span><h3>Construir</h3><p>Implementação incremental com validação contínua.</p></div>
+        <div class="method-step"><span>04</span><h3>Verificar</h3><p>Testes, evidências, revisão e critérios de aceite.</p></div>
+        <div class="method-step"><span>05</span><h3>Aprender</h3><p>Documentar decisões e consolidar aprendizados reutilizáveis.</p></div>
+      </div>
+      <div class="method-note"><span class="mono">ENGINEERING PRINCIPLE</span><p>Uma hipótese não é uma funcionalidade. Uma demonstração não é produção. Uma execução só é considerada concluída quando seus critérios e evidências estão claros.</p></div>
+    </section>
 
-                <div class="hero-stats">
-                    <div class="stat-item" data-reveal="up" data-delay="100">
-                        <span class="stat-number" data-count="12">0</span>+
-                        <span class="stat-label">Active Agents</span>
-                    </div>
-                    <div class="stat-item" data-reveal="up" data-delay="200">
-                        <span class="stat-number" data-count="1039">0</span>
-                        <span class="stat-label">Mutations</span>
-                    </div>
-                    <div class="stat-item" data-reveal="up" data-delay="300">
-                        <span class="stat-number" data-count="99">0</span>.9%
-                        <span class="stat-label">Uptime</span>
-                    </div>
-                </div>
-                
-                <div class="scroll-indicator">
-                    <span class="mouse">
-                        <span class="wheel"></span>
-                    </span>
-                    <span class="arrow-down"></span>
-                </div>
-            </div>
-        </header>
-
-        <nav class="main-nav">
-            <div class="nav-blur-bg"></div>
-            <a href="#about" class="nav-link" data-section="about">
-                <span class="nav-icon">◆</span>
-                <span class="nav-text">Manifest</span>
-            </a>
-            <a href="#projects" class="nav-link" data-section="projects">
-                <span class="nav-icon">◆</span>
-                <span class="nav-text">Ecosystem</span>
-            </a>
-            <a href="#skills" class="nav-link" data-section="skills">
-                <span class="nav-icon">◆</span>
-                <span class="nav-text">Stack</span>
-            </a>
-            <a href="#philosophy" class="nav-link" data-section="philosophy">
-                <span class="nav-icon">◆</span>
-                <span class="nav-text">Logic</span>
-            </a>
-            <a href="#contact" class="nav-link" data-section="contact">
-                <span class="nav-icon">◆</span>
-                <span class="nav-text">Uplink</span>
-            </a>
-        </nav>
-
-        <div class="container">
-            <section id="about" class="section" data-reveal="left">
-                <div class="section-header">
-                    <h2 class="section-title">
-                        <span class="section-number">01</span>
-                        <span class="section-name">Core Directive</span>
-                    </h2>
-                </div>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p class="about-intro">
-                            Transforming complex strategic intent into <span class="highlight">high-velocity digital
-                                infrastructure</span>.
-                            My focus lies at the intersection of human vision and machine autonomy, building systems that
-                            don't just run—they evolve.
-                        </p>
-                        <div class="about-details">
-                            <div class="detail-item" data-reveal="up" data-delay="50">
-                                <span class="detail-icon">▸</span>
-                                <span class="detail-text">Architecting autonomous agent swarms and MCP-driven
-                                    ecosystems.</span>
-                            </div>
-                            <div class="detail-item" data-reveal="up" data-delay="100">
-                                <span class="detail-icon">▸</span>
-                                <span class="detail-text">Implementing Deep Tech compliance and priority art semantic
-                                    guards.</span>
-                            </div>
-                            <div class="detail-item" data-reveal="up" data-delay="150">
-                                <span class="detail-icon">▸</span>
-                                <span class="detail-text">Expertise in bio-computational simulation and organic system
-                                    logic.</span>
-                            </div>
-                            <div class="detail-item" data-reveal="up" data-delay="200">
-                                <span class="detail-icon">▸</span>
-                                <span class="detail-text">Execution is the only metric that matters.</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-metrics">
-                        <div class="metric-card gold-grad" data-reveal="right" data-delay="100">
-                            <div class="metric-value">L3</div>
-                            <div class="metric-label">Access Level</div>
-                        </div>
-                        <div class="metric-card aura-grad" data-reveal="right" data-delay="200">
-                            <div class="metric-value">96.7%</div>
-                            <div class="metric-label">Neural Sync</div>
-                        </div>
-                        <div class="metric-card cyber-grad" data-reveal="right" data-delay="300">
-                            <div class="metric-value">7.2Tb</div>
-                            <div class="metric-label">Processed Flow</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="projects" class="section" data-reveal="right">
-                <div class="section-header">
-                    <h2 class="section-title">
-                        <span class="section-number">02</span>
-                        <span class="section-name">Active Ecosystem</span>
-                    </h2>
-                </div>
-                <div class="projects-container">
-                    <!-- Project items with reveal attributes -->
-                    <div class="project-item featured reveal-card" data-reveal="up">
-                        <div class="project-header">
-                            <h3 class="project-title">VIREON</h3>
-                            <span class="project-status active">ORCHESTRATOR</span>
-                        </div>
-                        <p class="project-description">
-                            Universal agentic orchestrator designed for rapid materialization of complex software architectures.
-                        </p>
-                        <div class="project-tech-stack">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Rust</span>
-                            <span class="tech-tag">MCP</span>
-                            <span class="tech-tag">Swarm Logic</span>
-                        </div>
-                        <a href="https://github.com/SH1W4/vireon-mcp-ecosystem" class="project-link">
-                            View Dossier <span class="arrow">→</span>
-                        </a>
-                    </div>
-
-                    <div class="project-item featured reveal-card" data-reveal="up" data-delay="100">
-                        <div class="project-header">
-                            <h3 class="project-title">th3m1s-core</h3>
-                            <span class="project-status active">GovTech</span>
-                        </div>
-                        <p class="project-description">
-                            Sovereign Infrastructure for Brazilian Innovation. Algorithmic governance for evaluators and innovators.
-                        </p>
-                        <div class="project-tech-stack">
-                            <span class="tech-tag">Trinity OS</span>
-                            <span class="tech-tag">Legal AI</span>
-                            <span class="tech-tag">IP Mapping</span>
-                        </div>
-                        <a href="https://github.com/th3m1s-core" class="project-link">
-                            Access Archive <span class="arrow">→</span>
-                        </a>
-                    </div>
-
-                    <div class="project-item reveal-card" data-reveal="up" data-delay="150">
-                        <div class="project-header">
-                            <h3 class="project-title">ghostfund-protocol</h3>
-                            <span class="project-status active">DeSci</span>
-                        </div>
-                        <p class="project-description">
-                            Sovereign fundraising gateway for decentralized science. Security-first Rust/WASM implementation.
-                        </p>
-                        <div class="project-tech-stack">
-                            <span class="tech-tag">Rust</span>
-                            <span class="tech-tag">WASM</span>
-                            <span class="tech-tag">Web3</span>
-                        </div>
-                        <a href="https://github.com/ghostfund-protocol" class="project-link">
-                            Access Protocol <span class="arrow">→</span>
-                        </a>
-                    </div>
-
-                    <div class="project-item reveal-card" data-reveal="up" data-delay="200">
-                        <div class="project-header">
-                            <h3 class="project-title">IP-GUARD</h3>
-                            <span class="project-status beta">PROTECT</span>
-                        </div>
-                        <p class="project-description">
-                            Deep Tech semantic prior art detection and intellectual property protection framework.
-                        </p>
-                        <div class="project-tech-stack">
-                            <span class="tech-tag">Rust</span>
-                            <span class="tech-tag">NLP</span>
-                            <span class="tech-tag">Vector DB</span>
-                        </div>
-                        <a href="https://github.com/SH1W4" class="project-link">
-                            View Dossier <span class="arrow">→</span>
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <section id="skills" class="section">
-                <div class="section-header" data-reveal="up">
-                    <h2 class="section-title">
-                        <span class="section-number">03</span>
-                        <span class="section-name">Technical Stack</span>
-                    </h2>
-                </div>
-                <div class="skills-grid">
-                    <div class="skill-category" data-reveal="left">
-                        <h3 class="category-title">◈ AI & Machine Learning</h3>
-                        <div class="skill-items">
-                            <div class="skill-card modern-skill">
-                                <span class="skill-name">LLM Architectures</span>
-                                <span class="skill-level expert">Expert</span>
-                            </div>
-                            <div class="skill-card modern-skill">
-                                <span class="skill-name">Semantic Search</span>
-                                <span class="skill-level expert">Expert</span>
-                            </div>
-                            <div class="skill-card modern-skill">
-                                <span class="skill-name">Agentic Workflows</span>
-                                <span class="skill-level expert">Expert</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-category" data-reveal="up">
-                        <h3 class="category-title">◈ Backend & Systems</h3>
-                        <div class="skill-items">
-                            <div class="skill-card modern-skill">
-                                <span class="skill-name">Rust / WASM</span>
-                                <span class="skill-level expert">Expert</span>
-                            </div>
-                            <div class="skill-card modern-skill">
-                                <span class="skill-name">Python / FastAPI</span>
-                                <span class="skill-level expert">Expert</span>
-                            </div>
-                            <div class="skill-card modern-skill">
-                                <span class="skill-name">Distributed Systems</span>
-                                <span class="skill-level expert">Expert</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-category" data-reveal="right">
-                        <h3 class="category-title">◈ Frontend Mastery</h3>
-                        <div class="skill-items">
-                            <div class="skill-card modern-skill">
-                                <span class="skill-name">High-Perf UI/UX</span>
-                                <span class="skill-level expert">Expert</span>
-                            </div>
-                            <div class="skill-card modern-skill">
-                                <span class="skill-name">3D/Canvas Graphics</span>
-                                <span class="skill-level advanced">Advanced</span>
-                            </div>
-                            <div class="skill-card modern-skill">
-                                <span class="skill-name">Responsive Design</span>
-                                <span class="skill-level expert">Expert</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="philosophy" class="section">
-                <div class="section-header" data-reveal="up">
-                    <h2 class="section-title">
-                        <span class="section-number">04</span>
-                        <span class="section-name">Logic Engine</span>
-                    </h2>
-                </div>
-                <div class="philosophy-content">
-                    <div class="philosophy-card modern-glass" data-reveal="up" data-delay="50">
-                        <div class="philosophy-icon">∞</div>
-                        <h3 class="philosophy-title">Adaptive Evolution</h3>
-                        <p class="philosophy-text">Systems must learn and adapt to environmental entropy.</p>
-                    </div>
-                    <div class="philosophy-card modern-glass" data-reveal="up" data-delay="150">
-                        <div class="philosophy-icon">⟟</div>
-                        <h3 class="philosophy-title">Symbiotic Design</h3>
-                        <p class="philosophy-text">Collaboration between human vision and machine precision.</p>
-                    </div>
-                    <div class="philosophy-card modern-glass" data-reveal="up" data-delay="250">
-                        <div class="philosophy-icon">◎</div>
-                        <h3 class="philosophy-title">Execution-First</h3>
-                        <p class="philosophy-text">Vision without execution is just a hallucination.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="contact" class="section">
-                <div class="section-header" data-reveal="up">
-                    <h2 class="section-title">
-                        <span class="section-number">05</span>
-                        <span class="section-name">Uplink</span>
-                    </h2>
-                </div>
-                <div class="contact-content">
-                    <div class="contact-grid">
-                        <div class="contact-links" data-reveal="left">
-                            <a href="https://github.com/SH1W4" class="contact-link github modern-button">
-                                <span class="link-text">GitHub</span>
-                            </a>
-                            <a href="https://linkedin.com/in/joaomartins-ai" class="contact-link linkedin modern-button">
-                                <span class="link-text">LinkedIn</span>
-                            </a>
-                        </div>
-                        <div class="terminal-container" data-reveal="right">
-                            <div class="terminal-window compact modern-terminal">
-                                <div class="terminal-header">
-                                    <div class="terminal-buttons">
-                                        <span class="terminal-button red"></span>
-                                        <span class="terminal-button yellow"></span>
-                                        <span class="terminal-button green"></span>
-                                    </div>
-                                    <span class="terminal-title">core@sh1w4: ~</span>
-                                </div>
-                                <div class="terminal-body">
-                                    <pre><code><span class="prompt">$</span> <span class="command">ssh</span> core@sh1w4.io
-<span class="output">Uplink established. Vector ready.</span>
-<span class="prompt">$</span> <span class="cursor">_</span></code></pre>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <footer class="main-footer">
-                <div class="footer-content">
-                    <div class="footer-info">
-                        <p class="copyright">© 2026 SH1W4 | Operational Core</p>
-                        <p class="status">System: <span class="status-indicator online">SINGULARITY_v3.0</span></p>
-                    </div>
-                </div>
-            </footer>
-        </div>
-    </main>
-
-    <!-- Performance Monitor -->
-    <div class="performance-monitor modern-monitor">
-        <div class="monitor-item">
-            <span class="monitor-label">FPS</span>
-            <span class="monitor-value" id="fps-counter">60</span>
-        </div>
-        <div class="monitor-item">
-            <span class="monitor-label">SYNC</span>
-            <span class="monitor-value" id="sync-val">100%</span>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
+    <section class="contact-section" id="contact"><div class="section-shell contact-inner"><div><p class="eyebrow">05 — CONTATO</p><h2>Vamos resolver<br><em>um problema relevante.</em></h2><p>Aberto a projetos de engenharia, pesquisa aplicada, arquitetura de soluções e colaboração técnica.</p></div><div class="contact-actions"><a class="button button-primary" href="https://www.linkedin.com/in/joaomartins-ai" target="_blank" rel="noreferrer">LinkedIn ↗</a><a class="button button-outline" href="https://github.com/SH1W4" target="_blank" rel="noreferrer">GitHub ↗</a></div></div></section>
+  </main>
+  <footer class="site-footer section-shell"><a class="wordmark" href="#top">SH1W4<span> / 2026</span></a><p>Independent Systems Engineering · Applied AI</p><a href="#top">Voltar ao topo ↑</a></footer>
+  <script src="script.js" defer></script>
 </body>
-
 </html>
